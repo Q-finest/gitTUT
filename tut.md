@@ -15,14 +15,28 @@
 	$ git init  
 	$ ls -ah
 
-# commit file/can add many times and commit together
+# commit file
+*can add many times and commit together*
+
 	$ vi readme.txt  
 	$ git add readme.txt  
 	$ git commit -m "wrote a readme file"  
 
 	
-# 
+# check back
 
-	$ vi readme.txt  
-	$ git add readme.txt  
-	$ git commit -m "wrote a readme file"  
+	$ git status 
+	$ git diff readme.txt 
+	
+	$ git log
+	$ git log --pretty=oneline
+	$ git log --graph
+	$ git log --abbrev-commit
+	
+	$ git
+	$ git 
+	$ git 
+	$ git 
+	$ git 
+	$ git 
+	$ git 
