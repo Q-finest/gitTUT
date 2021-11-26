@@ -122,14 +122,20 @@ Solve conflict manually, if it exists.
 
 	# Merge a branch into the current branch
 	$ git merge <branch>   
+![image](https://user-images.githubusercontent.com/68600731/143560774-72027609-4f92-4b7b-9f98-467fc4cf71cb.png)
+	
+	# no fast forward, can see merge action in log.
+	$ git merge --no-ff <branch>
+	$ git merge --no-ff -m "merge with no-ff" <branch>
+![image](https://user-images.githubusercontent.com/68600731/143560957-13bf8385-0711-4469-b964-5e33fde6ae09.png)
+
 	
 	# Copy a specific commit to the current branch
 	$ git cherry-pick <commit id>
 
-	# no fast forward, can see merge action in log.
-	$ git merge --no-ff -m "merge with no-ff" <branch>
 	
-![image](https://user-images.githubusercontent.com/68600731/143552353-66ee8453-53e7-4784-afad-3a3e775a9167.png)
+
+
 
 ### 2.3 stash
 ```
