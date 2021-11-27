@@ -33,6 +33,7 @@ $ git commit -m "wrote a readme file"
 + HEAD represent the current version, that is, the latest commit; last version is `HEAD^`，and the previous one is `HEAD^^`; Of course 100 is too large, thus, `HEAD~100`.  
 + The fallback speed is very fast, because Git has an internal `HEAD` pointer
 + `HEAD` to current branch, branch to current version
+
 ![image](https://user-images.githubusercontent.com/68600731/143549858-52b4573a-0bea-4b60-8043-fd7a332ef670.png)
 
 ```
@@ -93,12 +94,9 @@ $ git push <origin> :refs/tags/v0.9
 ### 1.10 `.gitignore`
 	$ git check-ignore -v App.class
 	
-	# 排除所有.开头的隐藏文件:
 	.*
-	# 排除所有.class文件:
 	*.class
-	# 不排除.gitignore和App.class:
-	!.gitignore
+	!.gitignore        # not included
 	!App.class
 
 ## 2. branch
